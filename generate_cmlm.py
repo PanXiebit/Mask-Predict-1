@@ -29,7 +29,7 @@ def main(args):
     if args.max_tokens is None and args.max_sentences is None:
         args.max_tokens = 12000
     print(args)
-    
+    exit()
     use_cuda = torch.cuda.is_available() and not args.cpu
     torch.manual_seed(args.seed)
 
